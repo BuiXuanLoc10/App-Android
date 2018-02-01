@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.admin.cafeapp.MainActivity"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What kind of Coffee?"
+        android:id="@+id/textView"
+        android:textSize="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#1b61b6"
+        android:textColor="#ffffff"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What else in your coffee?"
+        android:id="@+id/textView2"
+        android:textSize="22dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:background="#1b61b6"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:textColor="#fffefe" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cream"
+        android:id="@+id/chbCream"
+        android:textSize="22dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar"
+        android:id="@+id/chbSugar"
+        android:textSize="22dp"
+        android:layout_below="@+id/chbCream"
+        android:layout_alignLeft="@+id/chbCream"
+        android:layout_alignStart="@+id/chbCream"
+        android:checked="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAY"
+        android:id="@+id/btPay"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/chbSugar"
+        android:layout_alignRight="@+id/chbCream"
+        android:layout_alignEnd="@+id/chbCream" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decaf"
+            android:id="@+id/rbDecaf"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:textSize="22dp"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expresso"
+            android:id="@+id/rbExpresso"
+            android:textSize="22dp"
+            android:layout_below="@+id/rbColombian"
+            android:layout_alignLeft="@+id/rbColombian"
+            android:layout_alignStart="@+id/rbColombian"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Colombian"
+            android:id="@+id/rbColombian"
+            android:layout_below="@+id/rbDecaf"
+            android:layout_alignLeft="@+id/rbDecaf"
+            android:layout_alignStart="@+id/rbDecaf"
+            android:textSize="22dp"
+            android:checked="false" />
+    </RadioGroup>
+</RelativeLayout>
